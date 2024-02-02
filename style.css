@@ -1,0 +1,204 @@
+/*  (-CSS reset- Credit: Josh Comeau ) */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*  CSS Reset End */
+
+:root {
+  --primary-clr: hsl(10, 79%, 65%);
+  --secondary-clr: hsl(186, 34%, 60%);
+  --bg-clr: hsl(27, 66%, 92%);
+  --test1: hsl(25, 47%, 15%);
+  --paragraph-clr: hsl(28, 10%, 53%);
+  --test3: hsl(33, 100%, 98%);
+
+  --ff-base: "DM Sans", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-clr);
+  font-family: var(--ff-base);
+}
+
+/*--------Main Container--------*/
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  width: 28.125rem;
+}
+
+/*--------Balance Container--------*/
+
+#balance-container {
+  background-color: var(--primary-clr);
+  border-radius: 0.625rem;
+  padding: 1.125rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#my-balance-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#my-balance-container p {
+  color: var(--test3);
+}
+
+#my-balance-container h2 {
+  color: var(--test3);
+}
+
+/*--------Spending Container--------*/
+
+#spending-container {
+  background-color: white;
+  border-radius: 0.625rem;
+  padding: 1.125rem;
+}
+
+#spending-container h2 {
+    color: var(--test1);
+}
+
+#days {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.day-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--test3);
+    width: 3rem;
+    height: 1.875rem;
+    background-color: var(--test1);
+    border-radius: 0.375rem;
+    display: none;
+}
+
+.day-amount p {
+    font-size: 0.875rem;
+}
+
+.day:hover .day-amount {
+    display: flex; /* Show the element on hover */
+}
+
+
+#mon, #tue, #wed, #thu, #fri, #sat, #sun {
+    background-color: var(--primary-clr);
+    /* height depends on the amount value */
+    width: 2.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+#mon:hover, #tue:hover, #wed:hover, #thu:hover, #fri:hover, #sat:hover, #sun:hover {
+    opacity: 0.8;
+}
+
+hr {
+  border: none;
+  background-color: var(--paragraph-clr);
+  height: 0.0625rem;
+  opacity: 0.3;
+  margin-block: 1.25rem;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-left h1 {
+  font-size: 2.5rem;
+  color: var(--test1);
+}
+
+#footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#footer-right h4 {
+  color: var(--test1);
+}
+
+/* Repeated Style */
+
+.paragraph {
+  font-size: 0.875rem;
+  color: var(--paragraph-clr);
+}

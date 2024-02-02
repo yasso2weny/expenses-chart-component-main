@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+  <!-- JS File -->
+  <script src="script.js"></script>
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+<body>
+
+<main id="main-container">
+  
+    <section id="balance-container">
+      <div id="my-balance-container">
+        <p class="paragraph">My balance</p>
+        <h2>$921.48</h2>
+      </div>
+      <picture><img src="images/logo.svg" alt="logo"></picture>
+    </section>
+  
+    <section id="spending-container">
+      <h2>Spending - Last 7 days</h2>
+      <div id="days">
+
+        <div class="day">
+          <div id="mon-day-amount" class="day-amount"><p id="mon-day-amount-num">$</p></div>
+          <div id="mon"></div>
+          <p class="paragraph">mon</p>
+        </div>
+
+        <div class="day">
+          <div id="tue-day-amount" class="day-amount"><p id="tue-day-amount-num">$</p></div>
+          <div id="tue"></div>
+          <p class="paragraph">tue</p>
+        </div>
+
+        <div class="day">
+          <div id="wed-day-amount" class="day-amount"><p id="wed-day-amount-num">$</p></div>
+          <div id="wed"></div>
+          <p class="paragraph">wed</p>
+        </div>
+
+        <div class="day">
+          <div id="thu-day-amount" class="day-amount"><p id="thu-day-amount-num">$</p></div>
+          <div id="thu"></div>
+          <p class="paragraph">thu</p>
+        </div>
+
+        <div class="day">
+          <div id="fri-day-amount" class="day-amount"><p id="fri-day-amount-num">$</p></div>
+          <div id="fri"></div>
+          <p class="paragraph">fri</p>
+        </div>
+
+        <div class="day">
+          <div id="sat-day-amount" class="day-amount"><p id="sat-day-amount-num">$</p></div>
+          <div id="sat"></div>
+          <p class="paragraph">sat</p>
+        </div>
+
+        <div class="day">
+          <div id="sun-day-amount" class="day-amount"><p id="sun-day-amount-num">$</p></div>
+          <div id="sun"></div>
+          <p class="paragraph">sun</p>
+        </div>
+
+      </div>
+      <hr>
+      <div id="footer">
+        <div id="footer-left">
+          <p class="paragraph">Total this month</p>
+          <h1>$478.33</h1>
+        </div>
+        <div id="footer-right">
+          <h4>+2.4%</h4>
+          <p class="paragraph">from last month</p>
+        </div>
+      </div>
+    </section>
+
+</main>
+
+</body>
+</html>
